@@ -1,0 +1,27 @@
+{
+  "featureOrder": [
+    "powerDiff",
+    "loyaltyDiff",
+    "captainDiff",
+    "healerDiff",
+    "traitorRiskDiff",
+    "roleFitDiff",
+    "cohesionDiff",
+    "webSignalDiff"
+  ],
+  "coefficients": [
+    0.04603778760383459,
+    1.0991753488409535,
+    0.0234474322281675,
+    0.021031074530793246,
+    -7.650572800438365,
+    5.97714692518462,
+    0.05295423669513686,
+    0.054328477657537046
+  ],
+  "intercept": 0.23002684627494144,
+  "meta": {
+    "samples": 3000,
+    "source": "scikit-learn logistic regression with web signal from Wikipedia summaries"
+  }
+}

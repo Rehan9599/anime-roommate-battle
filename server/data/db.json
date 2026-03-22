@@ -1,0 +1,1375 @@
+{
+  "characters": [
+    {
+      "id": "gojo",
+      "name": "Satoru Gojo",
+      "anime": "JJK",
+      "universeRole": "mystic",
+      "powerLevel": 980,
+      "loyalty": 8,
+      "type": "Sorcerer",
+      "wikiTitle": "Satoru_Gojo",
+      "imageUrl": "https://myanimelist.net/images/characters/15/422168.jpg",
+      "infoSource": "jikan",
+      "info": "Age: 28\nBirthday: December 7, 1989\nHeight: 190 cm (6'3\")\nClan: Gojou Clan\nHair: White\nEyes: Light Blue\nGrade: Special Grade\nAbilities: Immense Strength, Immense Speed &amp; Reflexes, Tactical Intellect, High Skill, Immense Cursed Energy, Infinity, Cursed Technique Lapse: Blue, Cursed Technique Reversal: Red, Cursed Technique Hollow: Purple, Six Eyes, Limitless, Domain Expansion: Infinite Void.\n\nSatoru Gojou is the first-year teacher at Tokyo Metropolitan Magic Technical College.\n\nWhen interacting with his students and friends, he is known to be quite playful and carefree. However, toward his enemies, he has shown to be quite cruel and rebellious. He is also very confident in his abilities and reputation as a powerful sorcerer.\n\n\n\n(Source: Jujutsu Kaisen Wiki, edited)",
+      "apiRefs": {
+        "jikanId": 164471,
+        "superheroId": null
+      },
+      "favorites": 63569
+    },
+    {
+      "id": "sukuna",
+      "name": "Ryomen Sukuna",
+      "anime": "JJK",
+      "universeRole": "wildcard",
+      "powerLevel": 1000,
+      "loyalty": 2,
+      "type": "Curse King",
+      "wikiTitle": "Sukuna",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Ryomen_Sukuna_%28character%29.jpg/250px-Ryomen_Sukuna_%28character%29.jpg",
+      "infoSource": "wikipedia",
+      "info": "Ryomen Sukuna  is a fictional character and one of the main antagonists of the manga and anime series Jujutsu Kaisen created by Gege Akutami. Sukuna is a powerful curse user, feared by many for his immense power and malevolent nature, and was regarded as the strongest jujutsu sorcerer during the Heian Era, the golden age of jujutsu sorcerers. Due to his reputation as a strong and evil sorcerer with immeasurable cursed energy, he was dubbed by many as the King of Curses.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "itadori",
+      "name": "Yuji Itadori",
+      "anime": "JJK",
+      "universeRole": "brawler",
+      "powerLevel": 820,
+      "loyalty": 9,
+      "type": "Vessel Fighter",
+      "wikiTitle": "Yuji_Itadori",
+      "imageUrl": "https://myanimelist.net/images/characters/11/524122.jpg",
+      "infoSource": "jikan",
+      "info": "Yuji Itadori  is a fictional character and the main protagonist of the manga series Jujutsu Kaisen, created by Gege Akutami. Yuji is a first-year Jujutsu Sorcerer at Tokyo Jujutsu High who is thrown into the world of sorcery after he ate a Cursed Object: a finger belonging to Ryomen Sukuna, a powerful sorcerer from the Heian period of Japan. With his classmates, Yuji exorcises Curses while trying to honor his grandfather's legacy and save others unconditionally so that when he is executed after eating all twenty fingers, he will not be alone in his death.",
+      "apiRefs": {
+        "jikanId": 235684,
+        "superheroId": null
+      },
+      "favorites": 0
+    },
+    {
+      "id": "megumi",
+      "name": "Megumi Fushiguro",
+      "anime": "JJK",
+      "universeRole": "strategist",
+      "powerLevel": 760,
+      "loyalty": 8,
+      "type": "Shikigami User",
+      "wikiTitle": "Megumi_Fushiguro",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/0/08/Megumi_Fushiguro.png",
+      "infoSource": "wikipedia",
+      "info": "Megumi Fushiguro  is a fictional character of the manga series Jujutsu Kaisen created by Gege Akutami. He is a first-year student at Tokyo Jujutsu High, an academy to become a Jujutsu Sorcerer and develop Cursed Techniques to fight against Cursed Spirits, beings manifested from Cursed Energy due to negative emotions flowing from humans. He is a descendant to the Zen'in family, one of the ultimate clans dominating the world of sorcery. Early in Jujutsu Kaisen, he is instructed by teacher Satoru Gojo to locate one of Sukuna's fingers, objects belonging to the most powerful Cursed Spirit of all time which leads to him partnering with and befriending Yuji Itadori, a fellow first-year Jujutsu Sorcerer.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "yuta",
+      "name": "Yuta Okkotsu",
+      "anime": "JJK",
+      "universeRole": "mystic",
+      "powerLevel": 900,
+      "loyalty": 9,
+      "type": "Special Grade Sorcerer",
+      "wikiTitle": "Yuta_Okkotsu",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/0/0a/YutaOkkotsu.png",
+      "infoSource": "wikipedia",
+      "info": "Yuta Okkotsu  is the protagonist of Gege Akutami's manga Jujutsu Kaisen 0, originally known as Tokyo Metropolitan Curse Technical School. He is a teenager who is surrounded and helped by the Cursed Spirit of Rika Orimoto, his childhood friend who died six years before the story and is cursed because both of them promised to get married when they grow up. During his teenage years, Yuta meets Satoru Gojo, a Jujutsu Sorcerer under whose guidance he joined Tokyo Metropolitan Curse Technical School to control Rika's Curse. Yuta also appears in the sequel Jujutsu Kaisen as an experienced warrior.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "nobara",
+      "name": "Nobara Kugisaki",
+      "anime": "JJK",
+      "universeRole": "assassin",
+      "powerLevel": 700,
+      "loyalty": 8,
+      "type": "Straw Doll User",
+      "wikiTitle": "Nobara_Kugisaki",
+      "imageUrl": "https://myanimelist.net/images/characters/12/422313.jpg",
+      "infoSource": "jikan",
+      "info": "Age: 16\nBirthdate: August 7\nHeight: 160 cm (5'3\")\n\nKugisaki Nobara is a girl born in Morioka, who moved to Tokyo to get away from the countryside. In order to live the city life in Tokyo, Nobara joined the Tokyo Metropolitan Magic Technical College to avoid worrying about money. \n\nNobara has a strong sense of staying true to herself in both appearance and herself as a person. She often comes off as rash and impertinent, but she cares about her friends just as about herself.\n\nShe is a short girl with short orange dyed hair, a black button-down shirt, skirt, stockings, and shoes.\n\n(Source: Jujutsu Kaisen Wiki)",
+      "apiRefs": {
+        "jikanId": 164472,
+        "superheroId": null
+      },
+      "favorites": 10525
+    },
+    {
+      "id": "maki",
+      "name": "Maki Zenin",
+      "anime": "JJK",
+      "universeRole": "assassin",
+      "powerLevel": 850,
+      "loyalty": 8,
+      "type": "Weapon Specialist",
+      "wikiTitle": "Maki_Zenin",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/38/MakiZennin.png",
+      "infoSource": "wikipedia",
+      "info": "Maki Zen'in  is a fictional character from Gege Akutami's manga Jujutsu Kaisen 0, originally known as Tokyo Metropolitan Curse Technical School. She is a young student from Jujutsu High, mentored by Satoru Gojo. While working on missions involving Curses, Maki mentors the newcomer Yuta Okkotsu who is trying to control the undead Rika which is attacking innocent people. The manga mentions Maki's origins as a reject from the Zen'in clan which is further explored in the sequel Jujutsu Kaisen where she is one year older and deals with several enemies.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "toji",
+      "name": "Toji Fushiguro",
+      "anime": "JJK",
+      "universeRole": "assassin",
+      "powerLevel": 930,
+      "loyalty": 3,
+      "type": "Heavenly Restriction",
+      "wikiTitle": "Toji_Fushiguro",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Jujutsu_Kaisen_characters.png/330px-Jujutsu_Kaisen_characters.png",
+      "infoSource": "wikipedia",
+      "info": "The manga series Jujutsu Kaisen features an extensive cast of characters created by Gege Akutami.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "geto",
+      "name": "Suguru Geto",
+      "anime": "JJK",
+      "universeRole": "leader",
+      "powerLevel": 900,
+      "loyalty": 3,
+      "type": "Curse Manipulator",
+      "wikiTitle": "Suguru_Geto",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/SuguruGetolook.png/250px-SuguruGetolook.png",
+      "infoSource": "wikipedia",
+      "info": "Suguru Geto  is a fictional character and the main antagonist of the Gege Akutami's manga Jujutsu Kaisen 0. Suguru Geto is a powerful sorcerer who was previously friends with Satoru Gojo. He seeks the Curses Rika Orimoto, who in turn is searching for the protagonist of the prequel series, Yuta Okkotsu. Geto also appears in the main Jujutsu Kaisen series which, through flashbacks, further explores his friendship with Gojo and their eventual antagonism towards one another. In the main series, his corpse is controlled by Kenjaku , an ancient sorcerer who uses the Cursed Technique of transplanting his brain into other bodies. Kenjaku's goal is to evolve humanity through Cursed Energy to create a new golden age of Jujutsu sorcery similar to the Heian period.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "nanami",
+      "name": "Kento Nanami",
+      "anime": "JJK",
+      "universeRole": "support",
+      "powerLevel": 790,
+      "loyalty": 10,
+      "type": "Grade 1 Sorcerer",
+      "wikiTitle": "Kento_Nanami",
+      "imageUrl": "https://robohash.org/nanami.png?set=set2",
+      "infoSource": "fallback",
+      "info": null,
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "yoriichi",
+      "name": "Yoriichi Tsugikuni",
+      "anime": "Demon Slayer",
+      "universeRole": "assassin",
+      "powerLevel": 960,
+      "loyalty": 9,
+      "type": "Demon Slayer",
+      "wikiTitle": "Yoriichi_Tsugikuni",
+      "imageUrl": "https://robohash.org/yoriichi.png?set=set2",
+      "infoSource": "fallback",
+      "info": null,
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "muzan",
+      "name": "Muzan Kibutsuji",
+      "anime": "Demon Slayer",
+      "universeRole": "wildcard",
+      "powerLevel": 930,
+      "loyalty": 2,
+      "type": "Demon Lord",
+      "wikiTitle": "Muzan_Kibutsuji",
+      "imageUrl": "https://myanimelist.net/images/characters/4/384669.jpg",
+      "infoSource": "jikan",
+      "info": "Age: &lt;20 (Human), ≈1,000 (Chronologically), &gt;10,000 (Biologically)\nHeight: 179 cm (5'10½\")\nWeight: 75 kg (165 lbs)\nAffiliation: Twelve Kizuki (Leader)\n\nKibutsuji Muzan is a Demon, the first of his kind, and the progenitor of most other Demons.\n\n\n(Source: Kimetsu no Yaiba Wiki)",
+      "apiRefs": {
+        "jikanId": 151156,
+        "superheroId": null
+      },
+      "favorites": 777
+    },
+    {
+      "id": "tanjiro",
+      "name": "Tanjiro Kamado",
+      "anime": "Demon Slayer",
+      "universeRole": "leader",
+      "powerLevel": 800,
+      "loyalty": 9,
+      "type": "Breathing Swordsman",
+      "wikiTitle": "Tanjiro_Kamado",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/ea/Tanjirou_manga.png",
+      "infoSource": "wikipedia",
+      "info": "Tanjiro Kamado  is a fictional character and the main protagonist of the manga series Demon Slayer: Kimetsu no Yaiba, created by Koyoharu Gotouge. Tanjiro goes on a quest to restore the humanity of his sister, Nezuko, after his family was killed and his sister was transformed into a demon by Muzan Kibutsuji following an attack that resulted in the death of his other relatives. After an encounter with Giyu Tomioka, a demon slayer, Tanjiro is recruited by Giyu to also become a demon slayer to help his sister turn human again and avenge his family. He uses Hinokami Kagura with his sword. Tanjiro is a prominent member and character in the Demon Slayer Corps and the archenemy of Muzan and Akaza.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "rengoku",
+      "name": "Kyojuro Rengoku",
+      "anime": "Demon Slayer",
+      "universeRole": "leader",
+      "powerLevel": 790,
+      "loyalty": 10,
+      "type": "Flame Hashira",
+      "wikiTitle": "Kyojuro_Rengoku",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/KnY_characters.png/250px-KnY_characters.png",
+      "infoSource": "wikipedia",
+      "info": "The manga series Demon Slayer: Kimetsu no Yaiba features an extensive cast of characters created by Koyoharu Gotouge.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "inosuke",
+      "name": "Inosuke Hashibira",
+      "anime": "Demon Slayer",
+      "universeRole": "brawler",
+      "powerLevel": 760,
+      "loyalty": 8,
+      "type": "Beast Swordsman",
+      "wikiTitle": "Inosuke_Hashibira",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/KnY_characters.png/250px-KnY_characters.png",
+      "infoSource": "wikipedia",
+      "info": "The manga series Demon Slayer: Kimetsu no Yaiba features an extensive cast of characters created by Koyoharu Gotouge.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "zenitsu",
+      "name": "Zenitsu Agatsuma",
+      "anime": "Demon Slayer",
+      "universeRole": "assassin",
+      "powerLevel": 740,
+      "loyalty": 8,
+      "type": "Thunder Swordsman",
+      "wikiTitle": "Zenitsu_Agatsuma",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/KnY_characters.png/250px-KnY_characters.png",
+      "infoSource": "wikipedia",
+      "info": "The manga series Demon Slayer: Kimetsu no Yaiba features an extensive cast of characters created by Koyoharu Gotouge.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "giyu",
+      "name": "Giyu Tomioka",
+      "anime": "Demon Slayer",
+      "universeRole": "support",
+      "powerLevel": 830,
+      "loyalty": 9,
+      "type": "Water Hashira",
+      "wikiTitle": "Giyu_Tomioka",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/KnY_characters.png/250px-KnY_characters.png",
+      "infoSource": "wikipedia",
+      "info": "The manga series Demon Slayer: Kimetsu no Yaiba features an extensive cast of characters created by Koyoharu Gotouge.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "shinobu",
+      "name": "Shinobu Kocho",
+      "anime": "Demon Slayer",
+      "universeRole": "healer",
+      "powerLevel": 770,
+      "loyalty": 9,
+      "type": "Insect Hashira",
+      "wikiTitle": "Shinobu_Kocho",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/KnY_characters.png/250px-KnY_characters.png",
+      "infoSource": "wikipedia",
+      "info": "The manga series Demon Slayer: Kimetsu no Yaiba features an extensive cast of characters created by Koyoharu Gotouge.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "akaza",
+      "name": "Akaza",
+      "anime": "Demon Slayer",
+      "universeRole": "brawler",
+      "powerLevel": 900,
+      "loyalty": 3,
+      "type": "Upper Moon",
+      "wikiTitle": "Akaza",
+      "imageUrl": "https://robohash.org/akaza.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "Akaza is a Japanese surname. Notable people with the surname include:Hideyuki Akaza , Japanese urologist\nMiyoko Akaza , Japanese actress\nAkaza Naoyasu , Japanese daimyō\nAkaza Shichirōemon , Japanese samurai",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "tengen",
+      "name": "Tengen Uzui",
+      "anime": "Demon Slayer",
+      "universeRole": "support",
+      "powerLevel": 790,
+      "loyalty": 8,
+      "type": "Sound Hashira",
+      "wikiTitle": "Tengen_Uzui",
+      "imageUrl": "https://myanimelist.net/images/characters/16/387706.jpg",
+      "infoSource": "jikan",
+      "info": "Age: 23\nBirthday: October 31\nHeight: 198 cm (6'6\")\nWeight: 95 kg (209 lbs)\nAffiliation: Demon Slayer Corps\nCombat Style: Sound Breathing\n\n\n\nUzui Tengen is a Demon Hunter and the Sound Pillar of the Demon Killing Corps.\n\n(Source: Kimetsu no Yaiba Wiki)",
+      "apiRefs": {
+        "jikanId": 151144,
+        "superheroId": null
+      },
+      "favorites": 6052
+    },
+    {
+      "id": "eren",
+      "name": "Eren Yeager",
+      "anime": "AOT",
+      "universeRole": "wildcard",
+      "powerLevel": 910,
+      "loyalty": 4,
+      "type": "Titan Shifter",
+      "wikiTitle": "Eren_Yeager",
+      "imageUrl": "https://robohash.org/eren.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "Eren Yeager  is the protagonist of the Attack on Titan manga series created by Hajime Isayama. Eren is a teenager who swears revenge on enormous man-eating humanoid creatures known as Titans, who have forced what remains of the human race to live in walled-off cities and devoured his mother while destroying his hometown in the Shiganshina district of Wall Maria. In order to defeat the Titans, Eren enlists in the Military and joins the Survey Corps - an elite group of soldiers who fight Titans outside the walls, whilst studying the physiology of Titans so as to better understand and defend themselves against these creatures. As the story progresses, Eren gains the power of becoming a Titan later identified as \"Attack Titan\" .",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "levi",
+      "name": "Levi Ackerman",
+      "anime": "AOT",
+      "universeRole": "assassin",
+      "powerLevel": 780,
+      "loyalty": 9,
+      "type": "Elite Soldier",
+      "wikiTitle": "Levi_Ackerman",
+      "imageUrl": "https://robohash.org/levi.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "Levi Ackerman  is a fictional character from Hajime Isayama's manga series Attack on Titan. Levi is a soldier working for the Survey Corps Special Operations Squad , also known as Squad Levi , a squad of four elite soldiers with impressive combat records hand-picked by him. The squad takes the protagonist Eren Yeager under their wing as both his bodyguards and potential executors if he goes berserk. Though Levi is a supporting character, his backstory is explored when dealing with his former mentor Kenny during the main series as well as in the spin-off manga Attack on Titan: No Regrets.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "mikasa",
+      "name": "Mikasa Ackerman",
+      "anime": "AOT",
+      "universeRole": "assassin",
+      "powerLevel": 760,
+      "loyalty": 8,
+      "type": "Ackerman Warrior",
+      "wikiTitle": "Mikasa_Ackerman",
+      "imageUrl": "https://myanimelist.net/images/characters/9/215563.jpg",
+      "infoSource": "jikan",
+      "info": "Age: 15, \nBirthdate: February 10\nHeight: 170 cm (5'7\") -&gt; 176 cm (5'9\")\nWeight: 68 kg (150 lbs) -&gt; 70 kg (154 lbs)\nAffiliations: 104th Trainees Squad, Scouting Legion\nGraduation rank: 1st\n\nMikasa is Eren's childhood friend, along with Armin. Mikasa shares an unbreakable bond with Eren following events in their past, and rushes to protect him whenever he is in danger. Mikasa possesses impressive fighting skill and strength even as a child.\n\nAs a teen, Mikasa is considered a genius among all the army trainees and is incredibly skilled at combat and agility. She constantly worries for Eren's well-being and lives to protect him.",
+      "apiRefs": {
+        "jikanId": 40881,
+        "superheroId": null
+      },
+      "favorites": 56724
+    },
+    {
+      "id": "armin",
+      "name": "Armin Arlert",
+      "anime": "AOT",
+      "universeRole": "strategist",
+      "powerLevel": 720,
+      "loyalty": 8,
+      "type": "Strategist",
+      "wikiTitle": "Armin_Arlert",
+      "imageUrl": "https://robohash.org/armin.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "\nAttack on Titan series feature an extensive cast of fictional characters created by Hajime Isayama. The story is set in a world where humanity lives in cities surrounded by enormous walls; a defense against the Titans, gigantic humanoids that eat humans seemingly without reason. The story initially centers on Eren Yeager with his childhood friends Mikasa Ackerman and Armin Arlert who join the defense force to fight the Titans after their home town is invaded and Eren's mother is eaten. They are part of the 104th Training Corps, whose graduates assume different positions in the Military, including the Garrison Regiment, the Survey Corps and the Military Police Brigade. It is later revealed that the area where the Walls are located is an island called Paradis  and that it is the last territory of Eldia . There are other nations outside the island, namely Marley , a nation on the mainland which declared war on Paradis.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "reiner",
+      "name": "Reiner Braun",
+      "anime": "AOT",
+      "universeRole": "tank",
+      "powerLevel": 820,
+      "loyalty": 5,
+      "type": "Armored Titan",
+      "wikiTitle": "Reiner_Braun",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Reiner_Braun._Nein_zu_Kriegen_2023_02.jpg/330px-Reiner_Braun._Nein_zu_Kriegen_2023_02.jpg",
+      "infoSource": "wikipedia",
+      "info": "Reiner Braun is a German journalist, historian and peace activist. He is executive director of the International Peace Bureau (IPB). From 2013 to 2019 he served as President of the IPB.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "erwin",
+      "name": "Erwin Smith",
+      "anime": "AOT",
+      "universeRole": "leader",
+      "powerLevel": 730,
+      "loyalty": 10,
+      "type": "Commander",
+      "wikiTitle": "Erwin_Smith",
+      "imageUrl": "https://myanimelist.net/images/characters/14/559023.jpg",
+      "infoSource": "jikan",
+      "info": "Birthday: October 14\nHeight: 188 cm (6' 2\")\nWeight: 92 kg (203 lbs)\nAffiliations: Survey Corps\n\nErwin Smith is the Commander of the Scouting Legion, known for his foresight, intelligence, and drive. His ultimate goal is for humanity to return to its former glory and would sacrifice any number of his men for the sake of mankind as a whole.\n\nNote: Erwin is the official English transliteration by Kodansha.",
+      "apiRefs": {
+        "jikanId": 46496,
+        "superheroId": null
+      },
+      "favorites": 28602
+    },
+    {
+      "id": "annie",
+      "name": "Annie Leonhart",
+      "anime": "AOT",
+      "universeRole": "brawler",
+      "powerLevel": 810,
+      "loyalty": 5,
+      "type": "Female Titan",
+      "wikiTitle": "Annie_Leonhart",
+      "imageUrl": "https://robohash.org/annie.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "\nAttack on Titan series feature an extensive cast of fictional characters created by Hajime Isayama. The story is set in a world where humanity lives in cities surrounded by enormous walls; a defense against the Titans, gigantic humanoids that eat humans seemingly without reason. The story initially centers on Eren Yeager with his childhood friends Mikasa Ackerman and Armin Arlert who join the defense force to fight the Titans after their home town is invaded and Eren's mother is eaten. They are part of the 104th Training Corps, whose graduates assume different positions in the Military, including the Garrison Regiment, the Survey Corps and the Military Police Brigade. It is later revealed that the area where the Walls are located is an island called Paradis  and that it is the last territory of Eldia . There are other nations outside the island, namely Marley , a nation on the mainland which declared war on Paradis.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "zeke",
+      "name": "Zeke Yeager",
+      "anime": "AOT",
+      "universeRole": "ranged",
+      "powerLevel": 860,
+      "loyalty": 4,
+      "type": "Beast Titan",
+      "wikiTitle": "Zeke_Yeager",
+      "imageUrl": "https://robohash.org/zeke.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "\nAttack on Titan series feature an extensive cast of fictional characters created by Hajime Isayama. The story is set in a world where humanity lives in cities surrounded by enormous walls; a defense against the Titans, gigantic humanoids that eat humans seemingly without reason. The story initially centers on Eren Yeager with his childhood friends Mikasa Ackerman and Armin Arlert who join the defense force to fight the Titans after their home town is invaded and Eren's mother is eaten. They are part of the 104th Training Corps, whose graduates assume different positions in the Military, including the Garrison Regiment, the Survey Corps and the Military Police Brigade. It is later revealed that the area where the Walls are located is an island called Paradis  and that it is the last territory of Eldia . There are other nations outside the island, namely Marley , a nation on the mainland which declared war on Paradis.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "hange",
+      "name": "Hange Zoe",
+      "anime": "AOT",
+      "universeRole": "support",
+      "powerLevel": 730,
+      "loyalty": 9,
+      "type": "Research Commander",
+      "wikiTitle": "Hange_Zoe",
+      "imageUrl": "https://robohash.org/hange.png?set=set2",
+      "infoSource": "fallback",
+      "info": null,
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "jean",
+      "name": "Jean Kirstein",
+      "anime": "AOT",
+      "universeRole": "leader",
+      "powerLevel": 710,
+      "loyalty": 8,
+      "type": "Squad Leader",
+      "wikiTitle": "Jean_Kirstein",
+      "imageUrl": "https://robohash.org/jean.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "\nAttack on Titan series feature an extensive cast of fictional characters created by Hajime Isayama. The story is set in a world where humanity lives in cities surrounded by enormous walls; a defense against the Titans, gigantic humanoids that eat humans seemingly without reason. The story initially centers on Eren Yeager with his childhood friends Mikasa Ackerman and Armin Arlert who join the defense force to fight the Titans after their home town is invaded and Eren's mother is eaten. They are part of the 104th Training Corps, whose graduates assume different positions in the Military, including the Garrison Regiment, the Survey Corps and the Military Police Brigade. It is later revealed that the area where the Walls are located is an island called Paradis  and that it is the last territory of Eldia . There are other nations outside the island, namely Marley , a nation on the mainland which declared war on Paradis.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "ben10",
+      "name": "Ben Tennyson",
+      "anime": "Ben 10",
+      "universeRole": "wildcard",
+      "powerLevel": 940,
+      "loyalty": 8,
+      "type": "Omnitrix Hero",
+      "wikiTitle": "Ben_Tennyson",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/bf/Ben_Tennyson.png",
+      "infoSource": "wikipedia",
+      "info": "Benjamin Kirby \"Ben\" Tennyson, commonly known as Ben 10, is a superhero and the titular protagonist of the Ben 10 franchise. Created by Man of Action and produced by Cartoon Network Studios, he first appeared in the 2005 animated series Ben 10, following his journey through Ben 10: Alien Force (2008–2010), Ben 10: Ultimate Alien (2010–2012), Ben 10: Omniverse (2012–2014). The franchise was later rebooted in 2016, with Ben 10 (2016–2021), reimagining the character as a 10-year-old for a modern audience. Across these iterations, he matures from a reckless and adventurous child into a capable and responsible hero once he obtains the Omnitrix, a watch-like device which allows him to turn into various alien species.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "kevin",
+      "name": "Kevin Levin",
+      "anime": "Ben 10",
+      "universeRole": "brawler",
+      "powerLevel": 820,
+      "loyalty": 6,
+      "type": "Absorber",
+      "wikiTitle": "Kevin_Levin",
+      "imageUrl": "https://robohash.org/kevin.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "This is a list of characters in the universe of Cartoon Network's Ben 10 franchise.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "gwen",
+      "name": "Gwen Tennyson",
+      "anime": "Ben 10",
+      "universeRole": "mystic",
+      "powerLevel": 760,
+      "loyalty": 8,
+      "type": "Anodite Mage",
+      "wikiTitle": "Gwen_Tennyson",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Gwen_Tennyson.png/330px-Gwen_Tennyson.png",
+      "infoSource": "wikipedia",
+      "info": "Gwendolyn \"Gwen\" Tennyson, occasionally known as Lucky Girl, is a fictional character that appears in Cartoon Network's Ben 10 franchise, created by Man of Action. The paternal first cousin and best friend of title protagonist Ben Tennyson, Gwen is a core member of Ben's team who frequently aids him in his various adventures to defeat villains and criminals and protect and save earth and the universe. A highly intelligent and strong martial artist, Gwen later develops magic abilities that are eventually revealed to be alien in nature, having inherited it from her alien paternal grandmother, Verdona.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "vilgax",
+      "name": "Vilgax",
+      "anime": "Ben 10",
+      "universeRole": "tank",
+      "powerLevel": 900,
+      "loyalty": 3,
+      "type": "Conqueror",
+      "wikiTitle": "Vilgax",
+      "imageUrl": "https://robohash.org/vilgax.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "This is a list of characters in the universe of Cartoon Network's Ben 10 franchise.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "max",
+      "name": "Max Tennyson",
+      "anime": "Ben 10",
+      "universeRole": "leader",
+      "powerLevel": 690,
+      "loyalty": 10,
+      "type": "Plumber Veteran",
+      "wikiTitle": "Max_Tennyson",
+      "imageUrl": "https://myanimelist.net/img/sp/icon/apple-touch-icon-256.png",
+      "infoSource": "jikan",
+      "info": "Max is a childhood friend of Ron Kamonohashi. They used to be neighbours.\n\n(Source: Kamonohashi Ron: Deranged Detective Wiki)\n\nNo voice actors have been added to this character. Help improve our database by searching for a voice actor, and adding this character to their roles .",
+      "apiRefs": {
+        "jikanId": 260658,
+        "superheroId": null
+      },
+      "favorites": 0
+    },
+    {
+      "id": "charmcaster",
+      "name": "Charmcaster",
+      "anime": "Ben 10",
+      "universeRole": "mystic",
+      "powerLevel": 780,
+      "loyalty": 4,
+      "type": "Mystic Caster",
+      "wikiTitle": "Charmcaster",
+      "imageUrl": "https://robohash.org/charmcaster.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "This is a list of characters in the universe of Cartoon Network's Ben 10 franchise.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "albedo",
+      "name": "Albedo",
+      "anime": "Ben 10",
+      "universeRole": "strategist",
+      "powerLevel": 860,
+      "loyalty": 2,
+      "type": "Omnitrix Rival",
+      "wikiTitle": "Albedo_(Ben_10)",
+      "imageUrl": "https://robohash.org/albedo.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "This is a list of characters in the universe of Cartoon Network's Ben 10 franchise.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "rook",
+      "name": "Rook Blonko",
+      "anime": "Ben 10",
+      "universeRole": "support",
+      "powerLevel": 760,
+      "loyalty": 9,
+      "type": "Partner",
+      "wikiTitle": "Rook_Blonko",
+      "imageUrl": "https://myanimelist.net/images/characters/11/566218.jpg",
+      "infoSource": "jikan",
+      "info": "Rook is a member of Manshine City's U-20 team. He plays as goalkeeper.\n\nNo voice actors have been added to this character. Help improve our database by searching for a voice actor, and adding this character to their roles .",
+      "apiRefs": {
+        "jikanId": 257763,
+        "superheroId": null
+      },
+      "favorites": 0
+    },
+    {
+      "id": "aggregor",
+      "name": "Aggregor",
+      "anime": "Ben 10",
+      "universeRole": "wildcard",
+      "powerLevel": 870,
+      "loyalty": 2,
+      "type": "Absorption Warlord",
+      "wikiTitle": "Aggregor",
+      "imageUrl": "https://robohash.org/aggregor.png?set=set2",
+      "infoSource": "fallback",
+      "info": null,
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "hex",
+      "name": "Hex",
+      "anime": "Ben 10",
+      "universeRole": "mystic",
+      "powerLevel": 740,
+      "loyalty": 4,
+      "type": "Sorcerer",
+      "wikiTitle": "Hex_(Ben_10)",
+      "imageUrl": "https://robohash.org/hex.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "This is a list of characters in the universe of Cartoon Network's Ben 10 franchise.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "light",
+      "name": "Light Yagami",
+      "anime": "Death Note",
+      "universeRole": "strategist",
+      "powerLevel": 720,
+      "loyalty": 3,
+      "type": "Mastermind",
+      "wikiTitle": "Light_Yagami",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/0/0c/Light_from_Death_Note.jpg",
+      "infoSource": "wikipedia",
+      "info": "Light Yagami  is the main protagonist of the manga series Death Note, created by Tsugumi Ohba and Takeshi Obata. He is portrayed as a brilliant but bored genius who finds the Death Note, a supernatural notebook that allows the user to kill anyone by knowing their name and face, after it is dropped by the Shinigami Ryuk. With the power of the Death Note, Light eliminates those he deems morally unworthy of life, masterminding a worldwide massacre as the mass murderer Kira (キラ). He believes he is making the world a better place by purging it of all its impurities, taking the stance of the \"God of the new world\" and thus fulfilling his goal. Over the course of his efforts to create a world free of crime, wherein he would rule as a godlike figure, Yagami is pursued by law enforcement groups such as the NPA and a world-renowned detective named L.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "l",
+      "name": "L",
+      "anime": "Death Note",
+      "universeRole": "strategist",
+      "powerLevel": 700,
+      "loyalty": 8,
+      "type": "Detective",
+      "wikiTitle": "L_(Death_Note)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/6c/L_from_Death_Note.png",
+      "infoSource": "wikipedia",
+      "info": "L Lawliet , known mononymously as L, Hideki Ryuga, and Ryuzaki, is a fictional character in the manga series Death Note, created by Tsugumi Ohba and Takeshi Obata. He is an enigmatic, mysterious, and highly esteemed international consulting detective whose true identity and background is kept a secret. He communicates with law enforcement agencies only through his equally inexplicable handler/assistant, Watari, who serves as his official liaison with the authorities. Though his past is shrouded in mystery, he has gained a reputation as arguably the world's greatest detective/criminal profiler.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "ryuk",
+      "name": "Ryuk",
+      "anime": "Death Note",
+      "universeRole": "wildcard",
+      "powerLevel": 860,
+      "loyalty": 2,
+      "type": "Shinigami",
+      "wikiTitle": "Ryuk",
+      "imageUrl": "https://myanimelist.net/images/characters/10/59125.jpg",
+      "infoSource": "jikan",
+      "info": "Likes: apples, the human world, chaos, Misa\nDislikes: being bored, not having apples, relapse\n\nThe original Shinigami who dropped the Death Note in the human world, and also love apples, which Light would pick up. Acting out of pure boredom, Ryuk begins the story of Death Note on a whim. Perhaps neutral by nature, Ryuk often refuses to aid Light and instead enjoys watching him struggle for his goal. The most important facet of Ryuk's character is that he is not Light's friend. He acts for his own interests and entertainment, and often fails to tell Light key details about the Death Note. Ryuk is selfish, however, and will aid Light if it serves his own goals, such as providing amusement or obtaining apples.\n\n(Source: Wikipedia)",
+      "apiRefs": {
+        "jikanId": 75,
+        "superheroId": null
+      },
+      "favorites": 12827
+    },
+    {
+      "id": "misa",
+      "name": "Misa Amane",
+      "anime": "Death Note",
+      "universeRole": "support",
+      "powerLevel": 620,
+      "loyalty": 5,
+      "type": "Kira Ally",
+      "wikiTitle": "Misa_Amane",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/32/Misa_and_Rem.jpg",
+      "infoSource": "wikipedia",
+      "info": "Misa Amane  is a fictional character in the manga series Death Note, created by Tsugumi Ohba and Takeshi Obata. Known as the famous model Misa Misa (ミサミサ), she seeks out Kira as she supports his cause to \"cleanse the world of evil\". Using her own Death Note, a notebook that allows its owner to kill anyone simply by knowing their name and face that she received from the Shinigami Rem, Misa does everything she can to aid Light. This includes shortening her own remaining lifespan by half, twice, in order to receive the eyes of a Shinigami, giving her the ability to learn a person's name just from looking at their face.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "near",
+      "name": "Near",
+      "anime": "Death Note",
+      "universeRole": "strategist",
+      "powerLevel": 670,
+      "loyalty": 8,
+      "type": "Successor Detective",
+      "wikiTitle": "Near_(Death_Note)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Death_Note_Characters.jpg/250px-Death_Note_Characters.jpg",
+      "infoSource": "wikipedia",
+      "info": "The manga series Death Note features an extensive cast of fictional characters designed by Takeshi Obata with their storylines created by Tsugumi Ohba. The story follows the character named Light Yagami, who chances upon a supernatural notebook which grants him the ability to cause the death of anyone he writes in it. Light uses the notebook he finds in order to cleanse the world of humans he has deemed unfit for society. A team of professional investigators set out to find out the mysterious killer and arrest him, and thus many other characters are introduced until Light is eventually caught.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "mello",
+      "name": "Mello",
+      "anime": "Death Note",
+      "universeRole": "wildcard",
+      "powerLevel": 680,
+      "loyalty": 5,
+      "type": "Rival Genius",
+      "wikiTitle": "Mihael_Keehl",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5a/MellobyObata.png",
+      "infoSource": "wikipedia",
+      "info": "Mihael Keehl , universally referred to by the mononym Mello , is a fictional character in the manga series Death Note, created by Tsugumi Ohba and Takeshi Obata. Mello is introduced alongside Near as a potential substitute for L. Both Mello and Near were raised at Wammy's House, an orphanage established by Watari, L's assistant. However, Mello refuses to work with Near to capture a murderer dubbed \"Kira\". Over the course of the series, he joins the mafia, obtains a Death Note, causes the death of some people, and dies before he can expose Kira's identity. Mello has also appeared in other media from the series.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "rem",
+      "name": "Rem",
+      "anime": "Death Note",
+      "universeRole": "healer",
+      "powerLevel": 780,
+      "loyalty": 7,
+      "type": "Protective Shinigami",
+      "wikiTitle": "Rem_(Death_Note)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Death_Note_Characters.jpg/250px-Death_Note_Characters.jpg",
+      "infoSource": "wikipedia",
+      "info": "The manga series Death Note features an extensive cast of fictional characters designed by Takeshi Obata with their storylines created by Tsugumi Ohba. The story follows the character named Light Yagami, who chances upon a supernatural notebook which grants him the ability to cause the death of anyone he writes in it. Light uses the notebook he finds in order to cleanse the world of humans he has deemed unfit for society. A team of professional investigators set out to find out the mysterious killer and arrest him, and thus many other characters are introduced until Light is eventually caught.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "soichiro",
+      "name": "Soichiro Yagami",
+      "anime": "Death Note",
+      "universeRole": "leader",
+      "powerLevel": 670,
+      "loyalty": 10,
+      "type": "Task Force Chief",
+      "wikiTitle": "Soichiro_Yagami",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Death_Note_Characters.jpg/250px-Death_Note_Characters.jpg",
+      "infoSource": "wikipedia",
+      "info": "The manga series Death Note features an extensive cast of fictional characters designed by Takeshi Obata with their storylines created by Tsugumi Ohba. The story follows the character named Light Yagami, who chances upon a supernatural notebook which grants him the ability to cause the death of anyone he writes in it. Light uses the notebook he finds in order to cleanse the world of humans he has deemed unfit for society. A team of professional investigators set out to find out the mysterious killer and arrest him, and thus many other characters are introduced until Light is eventually caught.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "matsuda",
+      "name": "Touta Matsuda",
+      "anime": "Death Note",
+      "universeRole": "support",
+      "powerLevel": 620,
+      "loyalty": 8,
+      "type": "Task Force Agent",
+      "wikiTitle": "Touta_Matsuda",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Death_Note_Characters.jpg/250px-Death_Note_Characters.jpg",
+      "infoSource": "wikipedia",
+      "info": "The manga series Death Note features an extensive cast of fictional characters designed by Takeshi Obata with their storylines created by Tsugumi Ohba. The story follows the character named Light Yagami, who chances upon a supernatural notebook which grants him the ability to cause the death of anyone he writes in it. Light uses the notebook he finds in order to cleanse the world of humans he has deemed unfit for society. A team of professional investigators set out to find out the mysterious killer and arrest him, and thus many other characters are introduced until Light is eventually caught.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "teru",
+      "name": "Teru Mikami",
+      "anime": "Death Note",
+      "universeRole": "assassin",
+      "powerLevel": 660,
+      "loyalty": 2,
+      "type": "Kira Disciple",
+      "wikiTitle": "Teru_Mikami",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Death_Note_Characters.jpg/250px-Death_Note_Characters.jpg",
+      "infoSource": "wikipedia",
+      "info": "The manga series Death Note features an extensive cast of fictional characters designed by Takeshi Obata with their storylines created by Tsugumi Ohba. The story follows the character named Light Yagami, who chances upon a supernatural notebook which grants him the ability to cause the death of anyone he writes in it. Light uses the notebook he finds in order to cleanse the world of humans he has deemed unfit for society. A team of professional investigators set out to find out the mysterious killer and arrest him, and thus many other characters are introduced until Light is eventually caught.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "saitama",
+      "name": "Saitama",
+      "anime": "OPM",
+      "universeRole": "brawler",
+      "powerLevel": 1100,
+      "loyalty": 7,
+      "type": "Hero",
+      "wikiTitle": "Saitama",
+      "imageUrl": "https://robohash.org/saitama.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "Saitama  may refer to:",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "garou",
+      "name": "Garou",
+      "anime": "OPM",
+      "universeRole": "brawler",
+      "powerLevel": 920,
+      "loyalty": 5,
+      "type": "Martial Monster",
+      "wikiTitle": "Garou",
+      "imageUrl": "https://robohash.org/garou.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "Garou may refer to:Garou (singer), Québécois singer\nGarou (album), a 2006 album by Garou\nGarou , a fictional race of werewolves in White Wolf's World of Darkness role-playing game\nGarou, Benin, a town and arrondissement of Benin\nGarou: Mark of the Wolves, a game in the Fatal Fury series for the Neo-Geo hardware\nGarou, a character from the manga and anime series One-Punch Man",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "tatsumaki",
+      "name": "Tatsumaki",
+      "anime": "OPM",
+      "universeRole": "mystic",
+      "powerLevel": 890,
+      "loyalty": 6,
+      "type": "Esper",
+      "wikiTitle": "Tatsumaki",
+      "imageUrl": "https://myanimelist.net/images/characters/7/459590.jpg",
+      "infoSource": "jikan",
+      "info": "Tatsumaki is a mob boss.",
+      "apiRefs": {
+        "jikanId": 116559,
+        "superheroId": null
+      },
+      "favorites": 0
+    },
+    {
+      "id": "genos",
+      "name": "Genos",
+      "anime": "OPM",
+      "universeRole": "assassin",
+      "powerLevel": 810,
+      "loyalty": 8,
+      "type": "Cyborg",
+      "wikiTitle": "Genos_(One-Punch_Man)",
+      "imageUrl": "https://robohash.org/genos.png?set=set2",
+      "infoSource": "fallback",
+      "info": null,
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "bang",
+      "name": "Silver Fang",
+      "anime": "OPM",
+      "universeRole": "leader",
+      "powerLevel": 840,
+      "loyalty": 9,
+      "type": "Martial Master",
+      "wikiTitle": "Bang_(One-Punch_Man)",
+      "imageUrl": "https://robohash.org/bang.png?set=set2",
+      "infoSource": "fallback",
+      "info": null,
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "boros",
+      "name": "Boros",
+      "anime": "OPM",
+      "universeRole": "tank",
+      "powerLevel": 980,
+      "loyalty": 3,
+      "type": "Cosmic Invader",
+      "wikiTitle": "Boros_(One-Punch_Man)",
+      "imageUrl": "https://robohash.org/boros.png?set=set2",
+      "infoSource": "fallback",
+      "info": null,
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "king",
+      "name": "King",
+      "anime": "OPM",
+      "universeRole": "wildcard",
+      "powerLevel": 700,
+      "loyalty": 9,
+      "type": "Luck Hero",
+      "wikiTitle": "King_(One-Punch_Man)",
+      "imageUrl": "https://robohash.org/king.png?set=set2",
+      "infoSource": "fallback",
+      "info": null,
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "fubuki",
+      "name": "Fubuki",
+      "anime": "OPM",
+      "universeRole": "support",
+      "powerLevel": 760,
+      "loyalty": 8,
+      "type": "Esper Support",
+      "wikiTitle": "Fubuki",
+      "imageUrl": "https://robohash.org/fubuki.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "Fubuki may refer to:",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "atomic",
+      "name": "Atomic Samurai",
+      "anime": "OPM",
+      "universeRole": "assassin",
+      "powerLevel": 860,
+      "loyalty": 8,
+      "type": "Sword Master",
+      "wikiTitle": "Atomic_Samurai",
+      "imageUrl": "https://robohash.org/atomic.png?set=set2",
+      "infoSource": "fallback",
+      "info": null,
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "speedo",
+      "name": "Speed-o'-Sound Sonic",
+      "anime": "OPM",
+      "universeRole": "assassin",
+      "powerLevel": 830,
+      "loyalty": 4,
+      "type": "Ninja",
+      "wikiTitle": "Speed-o%27-Sound_Sonic",
+      "imageUrl": "https://robohash.org/speedo.png?set=set2",
+      "infoSource": "fallback",
+      "info": null,
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "ironman",
+      "name": "Iron Man",
+      "anime": "Marvel",
+      "universeRole": "strategist",
+      "powerLevel": 900,
+      "loyalty": 8,
+      "type": "Tech Avenger",
+      "wikiTitle": "Iron_Man",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/4/47/Iron_Man_%28circa_2018%29.png",
+      "infoSource": "wikipedia",
+      "info": "Iron Man is a superhero appearing in American comic books published by Marvel Comics. Co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby, the character first appeared in Tales of Suspense #39 in 1962 and received his own title with Iron Man #1 in 1968. Shortly after his creation, Iron Man became a founding member of the superhero team the Avengers, alongside Thor, Ant-Man, the Wasp, and the Hulk. Iron Man stories, individually and with the Avengers, have been published consistently since the character's creation.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "captainamerica",
+      "name": "Captain America",
+      "anime": "Marvel",
+      "universeRole": "leader",
+      "powerLevel": 840,
+      "loyalty": 10,
+      "type": "Super Soldier",
+      "wikiTitle": "Captain_America",
+      "imageUrl": "https://robohash.org/captainamerica.png?set=set2",
+      "infoSource": "wikipedia",
+      "info": "Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics. The character first appeared in Captain America Comics #1, published on December 20, 1940, by Timely Publications, a corporate predecessor to Marvel. Captain America's civilian identity is Steven \"Steve\" Rogers, a frail man rejected by the United States Army for physical unfitness who is enhanced to the peak of human physical perfection by an experimental \"super-soldier serum\". Equipped with an American flag–inspired costume and a virtually indestructible shield, Captain America and his sidekick Bucky Barnes clashed frequently with the villainous Red Skull and other agents of the Axis powers amid World War II. In the war's final days, an accident left Captain America frozen in a state of suspended animation until he was revived in modern times. He resumes his exploits as a costumed hero and becomes a leader of the superhero team the Avengers, while frequently struggling as a \"man out of time\" to adjust to the new era.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "anime": "Marvel",
+      "universeRole": "tank",
+      "powerLevel": 980,
+      "loyalty": 8,
+      "type": "Asgardian",
+      "wikiTitle": "Thor",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/M%C3%A5rten_Eskil_Winge_-_Tor%27s_Fight_with_the_Giants_-_Google_Art_Project.jpg/330px-M%C3%A5rten_Eskil_Winge_-_Tor%27s_Fight_with_the_Giants_-_Google_Art_Project.jpg",
+      "infoSource": "wikipedia",
+      "info": "Thor is a prominent god in Germanic paganism. In Norse mythology, he is a hammer-wielding god associated with thunder, storms, strength, protection, fertility, and farmers. Besides Old Norse Þórr, the deity occurs in Old English as Thunor, in Old Frisian as Thuner, in Old Saxon as Thunar, and in Old High German as Donar, all ultimately stemming from the Proto-Germanic theonym *Þun(a)raz, meaning 'Thunder'.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "hulk",
+      "name": "Hulk",
+      "anime": "Marvel",
+      "universeRole": "brawler",
+      "powerLevel": 1000,
+      "loyalty": 6,
+      "type": "Gamma Titan",
+      "wikiTitle": "Hulk",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/aa/Hulk_%28circa_2019%29.png",
+      "infoSource": "wikipedia",
+      "info": "The Hulk is a superhero appearing in American comic books published by Marvel Comics. Created by writer Stan Lee and artist Jack Kirby, the character first appeared in the debut issue of The Incredible Hulk. In his comic book appearances, the character, who has dissociative identity disorder (DID), is primarily represented by the alter ego Hulk, an immense, green-skinned, hulking brute, possessing a limitless degree of physical strength, and the alter ego Dr. Robert Bruce Banner, a physically weak, socially withdrawn, and emotionally reserved physicist, both of whom typically resent each other. Lee stated that the Hulk's creation was inspired by a combination of Frankenstein and Dr. Jekyll and Mr. Hyde.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "blackwidow",
+      "name": "Black Widow",
+      "anime": "Marvel",
+      "universeRole": "assassin",
+      "powerLevel": 760,
+      "loyalty": 8,
+      "type": "Spy",
+      "wikiTitle": "Black_Widow_(Natasha_Romanova)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/37/Natasha_Romanova_incarnations.jpg",
+      "infoSource": "wikipedia",
+      "info": "Black Widow is a superhero appearing in American comic books published by Marvel Comics. Created by editor Stan Lee, scripter Don Rico, and artist Don Heck, the character debuted as an enemy of Iron Man in Tales of Suspense #52 (1964). She reformed into a hero in The Avengers #30 (1966) and her most well-known design was introduced in The Amazing Spider-Man #86 (1970). Black Widow has been the main character in several comic titles since 1970, receiving her own Black Widow series in 1999. She also frequently appears as a supporting character in The Avengers and Daredevil.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "spiderman",
+      "name": "Spider-Man",
+      "anime": "Marvel",
+      "universeRole": "assassin",
+      "powerLevel": 860,
+      "loyalty": 9,
+      "type": "Web Hero",
+      "wikiTitle": "Spider-Man",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png",
+      "infoSource": "wikipedia",
+      "info": "Spider-Man is a superhero in American comic books published by Marvel Comics. Created by writer-editor Stan Lee and artist Steve Ditko, he first appeared in the anthology comic book Amazing Fantasy #15 in the Silver Age of Comic Books. Widely regarded as one of the most popular and commercially successful superheroes, he has been featured in comic books, television shows, films, video games, novels, and plays.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "doctorstrange",
+      "name": "Doctor Strange",
+      "anime": "Marvel",
+      "universeRole": "mystic",
+      "powerLevel": 960,
+      "loyalty": 7,
+      "type": "Sorcerer Supreme",
+      "wikiTitle": "Doctor_Strange",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4f/Doctor_Strange_Vol_4_2_Ross_Variant_Textless.jpg",
+      "infoSource": "wikipedia",
+      "info": "Dr. Stephen Vincent Strange is a fictional character appearing in American comic books published by Marvel Comics. Created by artist Steve Ditko with scripting by Stan Lee, the character first appeared in Strange Tales #110. Doctor Strange serves as the Sorcerer Supreme, the primary protector of the Earth dimension against magical and mystical threats. Doctor Strange was introduced during the Silver Age of Comic Books in an attempt to bring a different kind of character and themes of mysticism to Marvel Comics.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "scarletwitch",
+      "name": "Scarlet Witch",
+      "anime": "Marvel",
+      "universeRole": "mystic",
+      "powerLevel": 970,
+      "loyalty": 5,
+      "type": "Chaos Witch",
+      "wikiTitle": "Scarlet_Witch",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/ec/Scarlet_Witch_Various_incarnations_2021.jpg",
+      "infoSource": "wikipedia",
+      "info": "Scarlet Witch is a character appearing in American comic books published by Marvel Comics. Created by writer Stan Lee and artist Jack Kirby, the character first appeared in The X-Men #4, in the Silver Age of Comic Books. Initially depicted as a mutant with the ability to manipulate probability, the character was later expanded as a powerful sorceress capable of wielding chaos magic and altering the fabric of reality. She is frequently cited as one of the most powerful and influential figures within the Marvel Universe.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "thanos",
+      "name": "Thanos",
+      "anime": "Marvel",
+      "universeRole": "wildcard",
+      "powerLevel": 1020,
+      "loyalty": 2,
+      "type": "Titan Warlord",
+      "wikiTitle": "Thanos",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b7/Thanos_%28Infobox_image%29.png",
+      "infoSource": "wikipedia",
+      "info": "Thanos is a supervillain appearing in American comic books published by Marvel Comics. Created by writer-artist Jim Starlin, the character first appeared in The Invincible Iron Man #55. An Eternal–Deviant warlord from the moon Titan, Thanos is regarded as one of the most powerful beings in the Marvel Universe. Due to his genocidal tendencies, he has clashed with many heroes including the Avengers and the Guardians of the Galaxy.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "anime": "Marvel",
+      "universeRole": "wildcard",
+      "powerLevel": 880,
+      "loyalty": 3,
+      "type": "Trickster",
+      "wikiTitle": "Loki",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Processed_SAM_loki.jpg/330px-Processed_SAM_loki.jpg",
+      "infoSource": "wikipedia",
+      "info": "Loki is a god in Norse mythology. He is the son of Fárbauti and Laufey, and the brother of Helblindi and Býleistr. Loki is married to the goddess Sigyn and they have two sons, Narfi or Nari and Váli. By the jötunn Angrboða, Loki is the father of Hel, the wolf Fenrir and the world serpent Jörmungandr. In the form of a mare, Loki was impregnated by the stallion Svaðilfari and gave birth to the eight-legged horse Sleipnir.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "superman",
+      "name": "Superman",
+      "anime": "DC",
+      "universeRole": "tank",
+      "powerLevel": 1020,
+      "loyalty": 9,
+      "type": "Kryptonian",
+      "wikiTitle": "Superman",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png",
+      "infoSource": "wikipedia",
+      "info": "Superman is a superhero created by writer Jerry Siegel and artist Joe Shuster, first appearing in issue #1 of Action Comics, published in the United States on April 18, 1938. Superman has been regularly published in American comic books since then, and has been adapted to other media including radio serials, novels, films, television shows, theater, and video games. Superman is the archetypal superhero: he wears an outlandish costume, uses a codename, and fights evil and averts disasters with the aid of extraordinary abilities. Although there are earlier characters who arguably fit this definition, it was Superman who popularized the superhero genre and established its conventions. He was the best-selling superhero in American comic books up until the 1980s and remains the highest grossing superhero if one considers the entire history of the genre.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "batman",
+      "name": "Batman",
+      "anime": "DC",
+      "universeRole": "strategist",
+      "powerLevel": 860,
+      "loyalty": 8,
+      "type": "Dark Knight",
+      "wikiTitle": "Batman",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c7/Batman_Infobox.jpg",
+      "infoSource": "wikipedia",
+      "info": "Batman is a superhero who appears in American comic books published by DC Comics. Batman was created by writer Bill Finger and artist Bob Kane, and debuted in the 27th issue of the comic book Detective Comics on March 30, 1939. In the DC Universe, Batman is the alias of Bruce Wayne, a wealthy American playboy, philanthropist, and industrialist who resides in the fictional Gotham City. Originally a millionaire, later versions of the character depict him as a billionaire. His origin story features him swearing vengeance against criminals after witnessing the murder of his parents, Thomas and Martha, as a child, a vendetta tempered by the ideal of justice. He trains himself physically and intellectually, crafts a bat-inspired persona, and monitors the Gotham streets at night. Kane, Finger, and other creators accompanied Batman with supporting characters, including his sidekicks Robin and Batgirl; allies Alfred Pennyworth and James Gordon; love interest and occasional adversary Catwoman; as well as foes such as the Penguin, the Riddler, Two-Face, and his archenemy, the Joker.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "wonderwoman",
+      "name": "Wonder Woman",
+      "anime": "DC",
+      "universeRole": "leader",
+      "powerLevel": 940,
+      "loyalty": 9,
+      "type": "Amazon Warrior",
+      "wikiTitle": "Wonder_Woman",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/6b/Wonder_Woman_750.jpg",
+      "infoSource": "wikipedia",
+      "info": "Wonder Woman is a superheroine appearing in American comic books published by DC Comics. The character first appeared in All Star Comics #8, published October 21, 1941, with her first feature in Sensation Comics #1 in January 1942. She is the daughter of Zeus and Hippolyta. She was created by the American psychologist and writer William Moulton Marston, and artist Harry G. Peter in 1941. Marston's wife, Elizabeth, and their life partner, Olive Byrne, are credited as being his inspiration for the character's appearance. She is one of the first DC superheroes and is one of the strongest superheroes of all time. The Wonder Woman title has been published by DC Comics almost continuously ever since.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "flash",
+      "name": "The Flash",
+      "anime": "DC",
+      "universeRole": "ranged",
+      "powerLevel": 930,
+      "loyalty": 8,
+      "type": "Speedster",
+      "wikiTitle": "Flash_(DC_Comics_character)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/ed/The_Flash_Family.jpg",
+      "infoSource": "wikipedia",
+      "info": "The Flash is the name of several superheroes appearing in American comic books published by DC Comics. Created by writer Gardner Fox and artist Harry Lampert, the original Flash first appeared in Flash Comics #1. Nicknamed \"the Scarlet Speedster\", all incarnations of the Flash possess \"superspeed\", which includes the ability to run, move, and think extremely fast, use superhuman reflexes, and seemingly violate certain laws of physics.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "aquaman",
+      "name": "Aquaman",
+      "anime": "DC",
+      "universeRole": "tank",
+      "powerLevel": 860,
+      "loyalty": 8,
+      "type": "Atlantean King",
+      "wikiTitle": "Aquaman",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/9/9d/Aquaman_Rebirth_1.png",
+      "infoSource": "wikipedia",
+      "info": "Aquaman is a superhero appearing in American comic books published by DC Comics. Created by Paul Norris and Mort Weisinger, the character debuted in More Fun Comics #73. Initially a backup feature in DC's anthology titles, Aquaman later starred in several volumes of a solo comic book series. During the late 1950s and 1960s superhero-revival period known as the Silver Age, he was a founding member of the Justice League. In the 1990s Modern Age, writers interpreted Aquaman's character more seriously, with storylines depicting the weight of his role as king of Atlantis.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "cyborg",
+      "name": "Cyborg",
+      "anime": "DC",
+      "universeRole": "support",
+      "powerLevel": 840,
+      "loyalty": 8,
+      "type": "Tech Hero",
+      "wikiTitle": "Cyborg_(DC_Comics)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/58/Cyborg_%28Victor_Stone%29.jpg",
+      "infoSource": "wikipedia",
+      "info": "Cyborg is a superhero appearing in American comic books published by DC Comics. The character was created by writer Marv Wolfman and artist George Pérez, and first appeared in an insert preview in DC Comics Presents #26. Cyborg is an important member of the Teen Titans, introduced ahead of the Titans' critically acclaimed New Teen Titans relaunch in 1980. For a brief period in the 2010s, Cyborg was reimagined as a founding member of the DC's flagship Justice League superhero lineup although these changes were later removed from continuity.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "greenlantern",
+      "name": "Green Lantern",
+      "anime": "DC",
+      "universeRole": "mystic",
+      "powerLevel": 900,
+      "loyalty": 8,
+      "type": "Ring Bearer",
+      "wikiTitle": "Green_Lantern",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/80/Green_Lantern_Rebirth_6.jpg",
+      "infoSource": "wikipedia",
+      "info": "Green Lantern is the name of several superheroes appearing in American comic books published by DC Comics. They fight evil with the aid of rings that grant them a variety of extraordinary powers, all of which come from imagination, fearlessness, and the electromagnetic spectrum of emotional willpower. The characters are typically depicted as members of the Green Lantern Corps, an intergalactic law enforcement agency.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "darkseid",
+      "name": "Darkseid",
+      "anime": "DC",
+      "universeRole": "wildcard",
+      "powerLevel": 1010,
+      "loyalty": 2,
+      "type": "Apokolips Lord",
+      "wikiTitle": "Darkseid",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/88/Justice_League_Odyssey_Darkseid.jpeg",
+      "infoSource": "wikipedia",
+      "info": "Darkseid is a supervillain appearing in American comic books published by DC Comics. Created by writer-artist Jack Kirby, the character first made a cameo appearance in Superman's Pal Jimmy Olsen #134, before being fully introduced in Forever People #1. Formerly known as Uxas, Darkseid is a New God and the tyrannical ruler of the planet Apokolips. His ultimate goal is to find and gain control over the Anti-Life Equation to enslave the multiverse by eliminating all hope and free will in sentient beings. Regarded as one of the most powerful beings in the DC Universe, Darkseid serves as one of Superman's greatest adversaries and the archenemy of the Justice League.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "joker",
+      "name": "Joker",
+      "anime": "DC",
+      "universeRole": "wildcard",
+      "powerLevel": 780,
+      "loyalty": 1,
+      "type": "Chaos Master",
+      "wikiTitle": "Joker_(character)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5f/Batman_Three_Jokers.jpg",
+      "infoSource": "wikipedia",
+      "info": "The Joker is a supervillain appearing in American comic books published by DC Comics. Created by Bill Finger, Bob Kane, and Jerry Robinson, the character first appeared in the debut issue of the comic book Batman on April 25, 1940. Credit for the Joker's creation is disputed; Kane and Robinson claimed responsibility for his design while acknowledging Finger's writing contribution. Although the Joker was planned to be killed off during his initial appearance, he was spared by editorial intervention, allowing the character to endure as the archenemy of the superhero Batman.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    },
+    {
+      "id": "shazam",
+      "name": "Shazam",
+      "anime": "DC",
+      "universeRole": "brawler",
+      "powerLevel": 920,
+      "loyalty": 8,
+      "type": "Magic Champion",
+      "wikiTitle": "Captain_Marvel_(DC_Comics)",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d5/Billy_Batson%2C_Shazam_Captain_Marvel_%28Modern%29.png",
+      "infoSource": "wikipedia",
+      "info": "Shazam, also known as Captain Marvel and The Captain, is a superhero in American comic books originally published by Fawcett Comics and currently published by DC Comics. Artist C. C. Beck and writer Bill Parker created the character in 1939. Shazam first appeared in Whiz Comics #2, published by Fawcett Comics. Shazam is the alter-ego of William Joseph \"Billy\" Batson, a young boy who is granted magical powers by the Wizard by speaking the magic word \"SHAZAM!\", an acronym of six \"immortal elders\": Solomon, Hercules, Atlas, Zeus, Achilles, and Mercury, and transforms into a costumed adult superhero with various superpowers derived from specific attributes of the aforementioned elders.",
+      "apiRefs": {
+        "jikanId": null,
+        "superheroId": null
+      }
+    }
+  ]
+}
