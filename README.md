@@ -184,6 +184,40 @@ npm --prefix server run dev
 
 Then refresh the frontend.
 
+If backend still does not start on another laptop:
+
+1. Ensure Node 18+ is installed.
+2. Reinstall dependencies:
+
+```bash
+npm run install:all
+```
+
+3. Start backend directly and read startup error:
+
+```bash
+npm --prefix server run start
+```
+
+4. If port 4000 is already used, run backend on a different port:
+
+Windows PowerShell:
+
+```powershell
+$env:PORT="4010"
+npm --prefix server run start
+```
+
+Git Bash:
+
+```bash
+PORT=4010 npm --prefix server run start
+```
+
+5. Verify health endpoint in browser:
+
+- http://localhost:4000/api/health (or your chosen port)
+
 ### PostgreSQL unavailable
 
 The backend falls back to in-memory storage automatically. This is fine for local testing, but data will not persist between restarts.

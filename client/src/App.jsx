@@ -554,7 +554,7 @@ function PlayerPanel({
 }
 
 export default function App() {
-  const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
+  const DEFAULT_API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
   const [characters, setCharacters] = useState([]);
   const [gameMode, setGameMode] = useState("pvp");
   const [teamA, setTeamA] = useState(EMPTY_TEAM);
@@ -595,6 +595,10 @@ export default function App() {
   const [onlineStatus, setOnlineStatus] = useState("");
   const [onlineVersion, setOnlineVersion] = useState(0);
   const [onlineSyncReady, setOnlineSyncReady] = useState(false);
+  const [apiBaseUrlInput, setApiBaseUrlInput] = useState(() => {
+    const saved = window.localStorage.getItem("arb_api_base_url") || "";
+    return saved || DEFAULT_API_BASE_URL;
+  });
 
   const audioRef = useRef(null);
   const applyingRemoteSnapshotRef = useRef(false);
@@ -603,8 +607,21 @@ export default function App() {
   const AI_PICK_DELAY_MS = 900;
   const AI_REVEAL_DELAY_MS = 2000;
 
+  function normalizeApiBaseUrl(value) {
+    const trimmed = String(value || "").trim().replace(/\/$/, "");
+    if (!trimmed) return "";
+    if (/^https?:\/\//i.test(trimmed)) return trimmed;
+    return `http://${trimmed}`;
+  }
+
+  const apiBaseUrl = normalizeApiBaseUrl(apiBaseUrlInput);
+
+  useEffect(() => {
+    window.localStorage.setItem("arb_api_base_url", apiBaseUrl);
+  }, [apiBaseUrl]);
+
   async function apiRequest(url, options = {}) {
-    const resolvedUrl = /^https?:\/\//i.test(url) ? url : `${API_BASE_URL}${url}`;
+    const resolvedUrl = /^https?:\/\//i.test(url) ? url : `${apiBaseUrl}${url}`;
     const res = await fetch(resolvedUrl, options);
     const rawText = await res.text();
 
@@ -909,7 +926,12 @@ export default function App() {
       );
       navigateTo("/battle");
     } catch (err) {
-      setError(err.message || "Could not join that room.");
+      const raw = err?.message || "Could not join that room.";
+      if (/Room not found or expired/i.test(raw)) {
+        setError(`${raw} You are currently using ${apiBaseUrl || "same-origin /api proxy"}. Make sure both players use the exact same backend URL.`);
+      } else {
+        setError(raw);
+      }
     }
   }
 
@@ -1925,6 +1947,17 @@ export default function App() {
                     style={{ minWidth: 130, textTransform: "uppercase" }}
                   />
                   <button className="draw-btn" onClick={joinOnlinePvp}>Join Room</button>
+                </div>
+              )}
+              {pendingMode === "pvp" && (
+                <div className="mode-row lobby-actions" style={{ marginTop: 10, gap: 10, flexWrap: "wrap" }}>
+                  <input
+                    value={apiBaseUrlInput}
+                    onChange={(e) => setApiBaseUrlInput(e.target.value)}
+                    placeholder="Backend URL (example: http://192.168.1.25:4000)"
+                    style={{ minWidth: 320 }}
+                  />
+                  <small style={{ opacity: 0.8 }}>Current API: {apiBaseUrl || "same-origin /api proxy"}</small>
                 </div>
               )}
               {pendingMode === "pvp" && onlineStatus && <p>{onlineStatus}</p>}

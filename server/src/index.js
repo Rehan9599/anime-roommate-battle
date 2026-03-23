@@ -12,7 +12,7 @@ import { chooseAiAction } from "./aiService.js";
 dotenv.config({ path: fileURLToPath(new URL("../../.env", import.meta.url)) });
 
 const app = express();
-const PORT = 4000;
+const PORT = Number(process.env.PORT || 4000);
 const PG_HOST = process.env.PGHOST || process.env.PG_HOST || "127.0.0.1";
 const PG_PORT = Number(process.env.PGPORT || process.env.PG_PORT || 5432);
 const PG_DATABASE = process.env.PGDATABASE || process.env.PG_DATABASE || "anime_roommate_battle";
