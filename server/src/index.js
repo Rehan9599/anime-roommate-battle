@@ -27,6 +27,64 @@ let usePostgres = false;
 let pgPool = null;
 let inMemoryCharacters = [...CHARACTERS];
 let inMemoryMatches = [];
+const pvpRooms = new Map();
+const ROOM_CODE_LENGTH = 6;
+const ROOM_TTL_MS = 6 * 60 * 60 * 1000;
+
+function sanitizeRoomCode(input) {
+  return String(input || "")
+    .toUpperCase()
+    .replace(/[^A-Z0-9]/g, "")
+    .slice(0, ROOM_CODE_LENGTH);
+}
+
+function generateRoomCode() {
+  const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  let code = "";
+  for (let i = 0; i < ROOM_CODE_LENGTH; i += 1) {
+    code += alphabet[Math.floor(Math.random() * alphabet.length)];
+  }
+  return code;
+}
+
+function createPvpRoom(snapshot = null) {
+  let attempts = 0;
+  let code = generateRoomCode();
+  while (pvpRooms.has(code) && attempts < 10) {
+    code = generateRoomCode();
+    attempts += 1;
+  }
+
+  const now = new Date().toISOString();
+  const room = {
+    code,
+    createdAt: now,
+    updatedAt: now,
+    playerAJoined: true,
+    playerBJoined: false,
+    snapshot,
+    snapshotVersion: snapshot ? 1 : 0,
+    lastActor: "A"
+  };
+  pvpRooms.set(code, room);
+  return room;
+}
+
+function pruneStaleRooms() {
+  const now = Date.now();
+  for (const [code, room] of pvpRooms.entries()) {
+    const updatedAtMs = new Date(room.updatedAt).getTime();
+    if (Number.isNaN(updatedAtMs)) {
+      pvpRooms.delete(code);
+      continue;
+    }
+    if (now - updatedAtMs > ROOM_TTL_MS) {
+      pvpRooms.delete(code);
+    }
+  }
+}
+
+setInterval(pruneStaleRooms, 10 * 60 * 1000).unref();
 
 async function loadLocalCharacterCache() {
   try {
@@ -184,6 +242,90 @@ async function readMatches() {
   }
   return inMemoryMatches;
 }
+
+app.post("/api/pvp/rooms", (req, res) => {
+  const snapshot = req.body?.snapshot || null;
+  const room = createPvpRoom(snapshot);
+  res.status(201).json({
+    roomCode: room.code,
+    role: "A",
+    room
+  });
+});
+
+app.post("/api/pvp/rooms/:roomCode/join", (req, res) => {
+  const roomCode = sanitizeRoomCode(req.params.roomCode);
+  if (!roomCode) {
+    return res.status(400).json({ error: "Invalid room code." });
+  }
+
+  const room = pvpRooms.get(roomCode);
+  if (!room) {
+    return res.status(404).json({ error: "Room not found or expired." });
+  }
+
+  let role = "spectator";
+  if (!room.playerBJoined) {
+    room.playerBJoined = true;
+    role = "B";
+  }
+  room.updatedAt = new Date().toISOString();
+
+  return res.json({ roomCode: room.code, role, room });
+});
+
+app.get("/api/pvp/rooms/:roomCode", (req, res) => {
+  const roomCode = sanitizeRoomCode(req.params.roomCode);
+  if (!roomCode) {
+    return res.status(400).json({ error: "Invalid room code." });
+  }
+
+  const room = pvpRooms.get(roomCode);
+  if (!room) {
+    return res.status(404).json({ error: "Room not found or expired." });
+  }
+
+  return res.json({ roomCode: room.code, room });
+});
+
+app.put("/api/pvp/rooms/:roomCode/state", (req, res) => {
+  const roomCode = sanitizeRoomCode(req.params.roomCode);
+  if (!roomCode) {
+    return res.status(400).json({ error: "Invalid room code." });
+  }
+
+  const room = pvpRooms.get(roomCode);
+  if (!room) {
+    return res.status(404).json({ error: "Room not found or expired." });
+  }
+
+  const { snapshot, actor, version } = req.body || {};
+  if (!snapshot || typeof snapshot !== "object") {
+    return res.status(400).json({ error: "Missing snapshot payload." });
+  }
+
+  if (actor !== "A" && actor !== "B") {
+    return res.status(400).json({ error: "Actor must be A or B." });
+  }
+
+  if (actor === "B" && !room.playerBJoined) {
+    return res.status(403).json({ error: "Player B has not joined this room yet." });
+  }
+
+  const incomingVersion = Number(version);
+  if (Number.isFinite(incomingVersion) && incomingVersion < room.snapshotVersion) {
+    return res.status(409).json({ error: "Snapshot is stale.", currentVersion: room.snapshotVersion });
+  }
+
+  room.snapshot = snapshot;
+  room.snapshotVersion = Number.isFinite(incomingVersion)
+    ? Math.max(room.snapshotVersion + 1, incomingVersion)
+    : room.snapshotVersion + 1;
+  room.lastActor = actor;
+  room.updatedAt = new Date().toISOString();
+
+  return res.json({ ok: true, version: room.snapshotVersion, roomCode: room.code });
+});
 
 app.get("/api/health", (_req, res) => {
   res.json({ ok: true, service: "anime-roommate-battle-api", storage: usePostgres ? "postgres" : "memory" });

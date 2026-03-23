@@ -134,6 +134,43 @@ Client `client/package.json`:
 - `POST /api/ai-decision`
 - `POST /api/battle`
 - `GET /api/scorecard`
+- `POST /api/pvp/rooms`
+- `POST /api/pvp/rooms/:roomCode/join`
+- `GET /api/pvp/rooms/:roomCode`
+- `PUT /api/pvp/rooms/:roomCode/state`
+
+## Cross-computer PvP (new)
+
+To play PvP from two different computers, both clients must point to the same backend server.
+
+1. Start the backend on one machine reachable by the other machine.
+
+```bash
+npm --prefix server run dev
+```
+
+2. Find that machine's LAN IP (example: `192.168.1.25`) and expose port `4000` on your firewall/network.
+
+3. On both computers, run frontend with the same API base URL:
+
+Windows PowerShell:
+
+```powershell
+$env:VITE_API_BASE_URL="http://192.168.1.25:4000"
+npm --prefix client run dev -- --host
+```
+
+Git Bash:
+
+```bash
+VITE_API_BASE_URL=http://192.168.1.25:4000 npm --prefix client run dev -- --host
+```
+
+4. In the lobby, select PvP:
+- Host clicks `Host Online Room` and shares the room code.
+- Friend enters room code and clicks `Join Room`.
+
+5. Each player controls only their side, but both see the same live draft state.
 
 ## Troubleshooting
 

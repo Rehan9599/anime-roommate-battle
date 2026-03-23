@@ -56,6 +56,13 @@ function nextPlayer(player) {
   return player === "A" ? "B" : "A";
 }
 
+function normalizeRoomCode(value) {
+  return String(value || "")
+    .toUpperCase()
+    .replace(/[^A-Z0-9]/g, "")
+    .slice(0, 6);
+}
+
 function resolveNextTurn(player, keepTurn, turnSkipsState) {
   const nextSkips = { ...turnSkipsState };
   if (keepTurn) {
@@ -547,6 +554,7 @@ function PlayerPanel({
 }
 
 export default function App() {
+  const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "");
   const [characters, setCharacters] = useState([]);
   const [gameMode, setGameMode] = useState("pvp");
   const [teamA, setTeamA] = useState(EMPTY_TEAM);
@@ -581,14 +589,23 @@ export default function App() {
   const [drawLocks, setDrawLocks] = useState({ A: 0, B: 0 });
   const [discardPiles, setDiscardPiles] = useState({ A: [], B: [] });
   const [turnSkips, setTurnSkips] = useState({ A: 0, B: 0 });
+  const [onlineRoomCode, setOnlineRoomCode] = useState("");
+  const [onlineRole, setOnlineRole] = useState("");
+  const [onlineRoomInput, setOnlineRoomInput] = useState("");
+  const [onlineStatus, setOnlineStatus] = useState("");
+  const [onlineVersion, setOnlineVersion] = useState(0);
+  const [onlineSyncReady, setOnlineSyncReady] = useState(false);
 
   const audioRef = useRef(null);
+  const applyingRemoteSnapshotRef = useRef(false);
+  const syncTimeoutRef = useRef(null);
 
   const AI_PICK_DELAY_MS = 900;
   const AI_REVEAL_DELAY_MS = 2000;
 
   async function apiRequest(url, options = {}) {
-    const res = await fetch(url, options);
+    const resolvedUrl = /^https?:\/\//i.test(url) ? url : `${API_BASE_URL}${url}`;
+    const res = await fetch(resolvedUrl, options);
     const rawText = await res.text();
 
     let payload = {};
@@ -695,6 +712,62 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  function buildOnlineSnapshot() {
+    return {
+      gameMode: "pvp",
+      teamA,
+      teamB,
+      handA,
+      handB,
+      draftedCount,
+      currentTurn,
+      draftPile,
+      skips,
+      swapA,
+      swapB,
+      battleResult,
+      boostersA,
+      boostersB,
+      boosterDrawnCount,
+      boosterLocks,
+      drawLocks,
+      discardPiles,
+      turnSkips
+    };
+  }
+
+  function applyOnlineSnapshot(snapshot) {
+    if (!snapshot || typeof snapshot !== "object") {
+      return;
+    }
+
+    applyingRemoteSnapshotRef.current = true;
+    setGameMode("pvp");
+    setTeamA(snapshot.teamA || EMPTY_TEAM);
+    setTeamB(snapshot.teamB || EMPTY_TEAM);
+    setHandA(Array.isArray(snapshot.handA) ? snapshot.handA : []);
+    setHandB(Array.isArray(snapshot.handB) ? snapshot.handB : []);
+    setDraftedCount(snapshot.draftedCount || { A: 0, B: 0 });
+    setCurrentTurn(snapshot.currentTurn === "B" ? "B" : "A");
+    setDraftPile(Array.isArray(snapshot.draftPile) ? snapshot.draftPile : []);
+    setSkips(snapshot.skips || { A: 1, B: 1 });
+    setSwapA(snapshot.swapA || { from: "captain", to: "viceCaptain" });
+    setSwapB(snapshot.swapB || { from: "captain", to: "viceCaptain" });
+    setBattleResult(snapshot.battleResult || null);
+    setBoostersA(Array.isArray(snapshot.boostersA) ? snapshot.boostersA : []);
+    setBoostersB(Array.isArray(snapshot.boostersB) ? snapshot.boostersB : []);
+    setBoosterDrawnCount(snapshot.boosterDrawnCount || { A: 0, B: 0 });
+    setBoosterLocks(snapshot.boosterLocks || { A: 0, B: 0 });
+    setDrawLocks(snapshot.drawLocks || { A: 0, B: 0 });
+    setDiscardPiles(snapshot.discardPiles || { A: [], B: [] });
+    setTurnSkips(snapshot.turnSkips || { A: 0, B: 0 });
+    setShowVictoryOverlay(false);
+
+    setTimeout(() => {
+      applyingRemoteSnapshotRef.current = false;
+    }, 0);
+  }
+
   function pullNextCardForPlayer(player, pile, boosterCounts) {
     let attempts = pile.length;
     while (attempts > 0) {
@@ -773,12 +846,197 @@ export default function App() {
     setTurnSkips({ A: 0, B: 0 });
   }
 
+  async function hostOnlinePvp() {
+    setError("");
+    try {
+      const payload = await apiRequest("/api/pvp/rooms", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({})
+      });
+
+      const roomCode = payload?.roomCode || "";
+      if (!roomCode) {
+        throw new Error("Could not create room.");
+      }
+
+      setOnlineRoomCode(roomCode);
+      setOnlineRoomInput(roomCode);
+      setOnlineRole("A");
+      setOnlineVersion(Number(payload?.room?.snapshotVersion || 0));
+      setOnlineSyncReady(true);
+      setOnlineStatus(`Room ${roomCode} created. Share this code with your friend.`);
+      setPendingMode("pvp");
+      startDraft("pvp");
+      navigateTo("/battle");
+    } catch (err) {
+      setError(err.message || "Failed to create online room.");
+    }
+  }
+
+  async function joinOnlinePvp() {
+    setError("");
+    const roomCode = normalizeRoomCode(onlineRoomInput);
+    if (!roomCode) {
+      setError("Enter a valid room code.");
+      return;
+    }
+
+    try {
+      const payload = await apiRequest(`/api/pvp/rooms/${roomCode}/join`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" }
+      });
+
+      const role = payload?.role || "spectator";
+      setOnlineRoomCode(roomCode);
+      setOnlineRoomInput(roomCode);
+      setOnlineRole(role === "A" || role === "B" ? role : "");
+      setOnlineVersion(Number(payload?.room?.snapshotVersion || 0));
+      setOnlineSyncReady(false);
+      setPendingMode("pvp");
+      setGameMode("pvp");
+
+      if (payload?.room?.snapshot) {
+        applyOnlineSnapshot(payload.room.snapshot);
+        setOnlineSyncReady(true);
+      }
+
+      setOnlineStatus(
+        role === "B"
+          ? `Joined room ${roomCode} as Player 2.`
+          : `Room ${roomCode} is full. Watching in spectator mode.`
+      );
+      navigateTo("/battle");
+    } catch (err) {
+      setError(err.message || "Could not join that room.");
+    }
+  }
+
   useEffect(() => {
     if (!characters.length) {
       return;
     }
     startDraft("pvp");
   }, [characters]);
+
+  useEffect(() => {
+    if (!onlineRoomCode || gameMode !== "pvp") {
+      return;
+    }
+
+    let cancelled = false;
+    let timer = null;
+
+    async function pollRoom() {
+      try {
+        const payload = await apiRequest(`/api/pvp/rooms/${onlineRoomCode}`);
+        const room = payload?.room;
+        if (!room) {
+          return;
+        }
+
+        if (!cancelled) {
+          setOnlineStatus(
+            room.playerBJoined
+              ? `Room ${onlineRoomCode} connected.`
+              : `Room ${onlineRoomCode} waiting for Player 2...`
+          );
+        }
+
+        const serverVersion = Number(room.snapshotVersion || 0);
+        if (serverVersion > onlineVersion) {
+          setOnlineVersion(serverVersion);
+          if (room.lastActor !== onlineRole && room.snapshot) {
+            applyOnlineSnapshot(room.snapshot);
+            setOnlineSyncReady(true);
+          }
+        }
+      } catch {
+        if (!cancelled) {
+          setOnlineStatus("Connection issue. Retrying room sync...");
+        }
+      } finally {
+        if (!cancelled) {
+          timer = setTimeout(pollRoom, 1200);
+        }
+      }
+    }
+
+    pollRoom();
+
+    return () => {
+      cancelled = true;
+      if (timer) clearTimeout(timer);
+    };
+  }, [onlineRoomCode, gameMode, onlineRole, onlineVersion]);
+
+  useEffect(() => {
+    const isOnlinePvp = gameMode === "pvp" && !!onlineRoomCode && (onlineRole === "A" || onlineRole === "B");
+    if (!isOnlinePvp) {
+      return;
+    }
+
+    if (!onlineSyncReady) {
+      return;
+    }
+
+    if (applyingRemoteSnapshotRef.current) {
+      return;
+    }
+
+    if (syncTimeoutRef.current) {
+      clearTimeout(syncTimeoutRef.current);
+    }
+
+    syncTimeoutRef.current = setTimeout(async () => {
+      try {
+        const snapshot = buildOnlineSnapshot();
+        const payload = await apiRequest(`/api/pvp/rooms/${onlineRoomCode}/state`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            actor: onlineRole,
+            snapshot
+          })
+        });
+        if (typeof payload?.version === "number") {
+          setOnlineVersion(payload.version);
+        }
+      } catch {
+        // Polling loop will recover latest state.
+      }
+    }, 140);
+
+    return () => {
+      if (syncTimeoutRef.current) {
+        clearTimeout(syncTimeoutRef.current);
+      }
+    };
+  }, [
+    onlineRoomCode,
+    onlineRole,
+    onlineSyncReady,
+    gameMode,
+    teamA,
+    teamB,
+    handA,
+    handB,
+    draftedCount,
+    currentTurn,
+    draftPile,
+    skips,
+    swapA,
+    swapB,
+    battleResult,
+    boostersA,
+    boostersB,
+    boosterDrawnCount,
+    boosterLocks,
+    drawLocks,
+    discardPiles,
+    turnSkips
+  ]);
 
   function assignFromHand(player, role, cardId) {
     const team = player === "A" ? teamA : teamB;
@@ -1567,10 +1825,21 @@ export default function App() {
 
   const canDrawA = currentTurn === "A" && draftedCount.A < 10 && countAssignableInHand(handA) < 5 && draftPile.length > 0;
   const canDrawB = currentTurn === "B" && draftedCount.B < 10 && countAssignableInHand(handB) < 5 && draftPile.length > 0;
+  const isOnlinePvp = gameMode === "pvp" && !!onlineRoomCode;
+  const panelAReadonly = gameMode === "ai" ? false : isOnlinePvp ? onlineRole !== "A" : false;
+  const panelBReadonly = gameMode === "ai" ? true : isOnlinePvp ? onlineRole !== "B" : false;
+  const canStartNewDraft = !isOnlinePvp || onlineRole === "A";
   const canBattle = isReady(teamA) && isReady(teamB);
   const draftPressure = Math.round(((draftedCount.A + draftedCount.B) / 20) * 100);
 
   function enterBattlePage() {
+    if (pendingMode === "pvp") {
+      setOnlineRoomCode("");
+      setOnlineRole("");
+      setOnlineStatus("");
+      setOnlineVersion(0);
+      setOnlineSyncReady(false);
+    }
     startDraft(pendingMode);
     navigateTo("/battle");
   }
@@ -1646,6 +1915,19 @@ export default function App() {
                 </select>
                 <button className="lets-battle-btn" onClick={enterBattlePage}>Let&apos;s Battle</button>
               </div>
+              {pendingMode === "pvp" && (
+                <div className="mode-row lobby-actions" style={{ marginTop: 12, gap: 10, flexWrap: "wrap" }}>
+                  <button className="lets-battle-btn" onClick={hostOnlinePvp}>Host Online Room</button>
+                  <input
+                    value={onlineRoomInput}
+                    onChange={(e) => setOnlineRoomInput(normalizeRoomCode(e.target.value))}
+                    placeholder="Room Code"
+                    style={{ minWidth: 130, textTransform: "uppercase" }}
+                  />
+                  <button className="draw-btn" onClick={joinOnlinePvp}>Join Room</button>
+                </div>
+              )}
+              {pendingMode === "pvp" && onlineStatus && <p>{onlineStatus}</p>}
             </header>
 
             <section className="scorecard-actions">
@@ -1703,10 +1985,12 @@ export default function App() {
             <h1>Battle Arena</h1>
             <div className="mode-row battle-actions">
               <button className="draw-btn battle-top-btn" onClick={() => navigateTo("/")}>Leave Battle</button>
-              <button className="draw-btn battle-top-btn" onClick={() => startDraft(gameMode)}>New Draft</button>
+              <button className="draw-btn battle-top-btn" disabled={!canStartNewDraft} onClick={() => startDraft(gameMode)}>New Draft</button>
             </div>
             <p className="turn-line">Current Turn: {currentTurn === "A" ? (gameMode === "ai" ? "You" : "Player 1") : gameMode === "ai" ? "AI" : "Player 2"}</p>
             {gameMode === "ai" && aiStatus && <p className="ai-line">{aiStatus}</p>}
+            {isOnlinePvp && <p className="ai-line">Room {onlineRoomCode} | You are {onlineRole === "A" ? "Player 1" : onlineRole === "B" ? "Player 2" : "Spectator"}</p>}
+            {isOnlinePvp && onlineStatus && <p className="ai-line">{onlineStatus}</p>}
           </header>
 
           <section className="battle-hype-strip" aria-label="Battle momentum">
@@ -1730,7 +2014,7 @@ export default function App() {
               onDraw={() => drawOne("A")}
               isActive={currentTurn === "A"}
               draftedCount={draftedCount.A}
-              readonly={false}
+              readonly={panelAReadonly}
               boosters={boostersA}
               onDropToBooster={() => dropBoosterCard("A")}
               boosterCount={boostersA.length}
@@ -1750,7 +2034,7 @@ export default function App() {
               onDraw={() => drawOne("B")}
               isActive={currentTurn === "B"}
               draftedCount={draftedCount.B}
-              readonly={gameMode === "ai"}
+              readonly={panelBReadonly}
               boosters={boostersB}
               onDropToBooster={() => dropBoosterCard("B")}
               boosterCount={boostersB.length}
